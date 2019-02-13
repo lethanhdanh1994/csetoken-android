@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_main_card_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+       android:orientation="horizontal" />
+    <Button
+        android:textSize="@dimen/sp15"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/button_request"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/activity_main_card_stack_view"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:text="Request Custom Amount"/>
+
+</RelativeLayout>

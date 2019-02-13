@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1374b0</color>
+    <color name="colorPrimaryDark">#1374b0</color>
+    <color name="colorAccent">#1374b0</color>
+    <color name="colorTabSelect">#2088c6</color>
+    <color name="colorBackground">#f7f7f7</color>
+    <color name="colorBackgroundDark">#EFEFEF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="itemMenu">#ebf7fe</color>
+    <color name="colorBlack">#35353d</color>
+    <color name="colorGrey">#c7c7c7</color>
+    <color name="colorLightBlue">#01b5f0</color>
+    <color name="colorVeryLightBlue">#ebfaff</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="color_orange_main">#df970c</color>
+    <color name="color_enable_grey_dark">#ededed</color>
+    <color name="color_form">#ebfaff</color>
+
+    <color name="color_content_chart">#91dde6</color>
+    <color name="bg_transaction">#ebfaff</color>
+    <color name="color_below_card">#f7f7f7</color>
+</resources>

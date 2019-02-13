@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "326717349851",
+    "firebase_url": "https://rock-terra-212709.firebaseio.com",
+    "project_id": "rock-terra-212709",
+    "storage_bucket": "rock-terra-212709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326717349851:android:573178575ca590b7",
+        "android_client_info": {
+          "package_name": "sg.cse.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326717349851-2oncrc39lvg3qb4t2dusr8rpl7fvm3h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sg.cse.wallet",
+            "certificate_hash": "7000f3a298ff0081434d366ad703de2e48865076"
+          }
+        },
+        {
+          "client_id": "326717349851-b60on2nj1i9kkbejgg71muqcfb9m77e3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3UOHofUxYYh7qJYtqcydqBCIE4AX8VPo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326717349851-b60on2nj1i9kkbejgg71muqcfb9m77e3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "326717349851-qqgkbf9mkhnaacpklk7jo3ke8jad6069.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.csesg.csewallet"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

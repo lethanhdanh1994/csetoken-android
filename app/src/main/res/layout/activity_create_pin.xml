@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_top_signinup"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_titlePin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create Pincode"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/size_30sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:text="Enter Pin"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivOne"
+                android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/ivTwo"
+                android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/ivThree"
+                android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/ivFour"
+                android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+            <EditText
+                android:maxLength="4"
+                android:id="@+id/edtPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </LinearLayout>
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow android:gravity="center">
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnOne"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="1"
+                    android:textSize="30sp"/>
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnTwo"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="2"
+                    android:textSize="30sp"/>
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnThree"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="3"
+                    android:textSize="30sp"/>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnFour"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="4"
+                    android:textSize="30sp"/>
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnFive"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="5"
+                    android:textSize="30sp"/>
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnSix"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="6"
+                    android:textSize="30sp"/>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnSeven"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="7"
+                    android:textSize="30sp"/>
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnEight"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="8"
+                    android:textSize="30sp"/>
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnNine"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="9"
+                    android:textSize="30sp"/>
+            </TableRow>
+            <TableRow android:gravity="center">
+                <Button
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@null"
+                    android:textSize="30sp"/>
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/btnZero"
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/custom_button_pin"
+                    android:text="0"
+                    android:textSize="30sp"/>
+                <ImageView
+                    android:id="@+id/ivBackspace"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_backspace_black_24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

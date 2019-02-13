@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/viewChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingTop="@dimen/dp20"
+                android:orientation="vertical"
+               >
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorBackground"
+                            android:orientation="vertical" />
+
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp100"
+                            android:layout_marginStart="@dimen/dp40"
+                            android:layout_marginEnd="@dimen/dp40"
+                            android:layout_marginTop="@dimen/dp40"
+                            app:cardElevation="@dimen/dp5"
+                            app:cardCornerRadius="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_below_card"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/size_16dp">
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </FrameLayout>
+
+                        <com.yuyakaido.android.cardstackview.CardStackView
+                            android:id="@+id/cardStackView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp170"
+                            android:padding="@dimen/dp18"
+                            app:layout_anchor="@id/viewChart"
+                            app:layout_anchorGravity="center|bottom"
+                            app:stackFrom="bottom"
+                            app:swipeDirection="vertical"
+                            app:visibleCount="1" />
+
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                android:paddingBottom="@dimen/dp18"
+                android:paddingEnd="@dimen/dp18"
+                android:paddingStart="@dimen/dp18"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="@dimen/dp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/size_4dp"
+                    app:cardElevation="@dimen/dp5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                       >
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/lineChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv1H"
+                                android:layout_width="wrap_content"
+                                android:text="1H"
+                                android:layout_margin="@dimen/dp5"
+                                android:textSize="@dimen/sp18"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/tv24H"
+                                android:layout_width="wrap_content"
+                                android:text="24H"
+                                android:layout_margin="@dimen/dp5"
+                                android:textSize="@dimen/sp18"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/tv1W"
+                                android:layout_width="wrap_content"
+                                android:text="1W"
+                                android:layout_margin="@dimen/dp5"
+                                android:textSize="@dimen/sp18"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/tv1M"
+                                android:layout_width="wrap_content"
+                                android:text="1M"
+                                android:layout_margin="@dimen/dp5"
+                                android:textSize="@dimen/sp18"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/tv1Y"
+                                android:layout_width="wrap_content"
+                                android:text="1Y"
+                                android:layout_margin="@dimen/dp5"
+                                android:textSize="@dimen/sp18"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvTransactionHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_16dp"
+                    android:layout_marginTop="@dimen/size_16dp"
+                    tools:listitem="@layout/transaction_history_item" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>
+

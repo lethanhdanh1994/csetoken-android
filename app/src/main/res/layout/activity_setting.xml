@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rela1"
+                    android:background="@drawable/custom_background3"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:id="@+id/noti"
+                        android:src="@drawable/noti_ic"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30" />
+                    <TextView
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/noti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notification"
+                        />
+                    <Switch
+                        android:checked="true"
+                        android:theme="@style/SCBSwitch"
+                        android:layout_marginTop="@dimen/dp18"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_below="@id/noti"
+                        android:id="@+id/line"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="#e0dbc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1" />
+
+                    <ImageView
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:layout_below="@id/line"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:src="@drawable/language_ic"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30" />
+                    <TextView
+                        android:layout_below="@id/line"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/noti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Language"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_language"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/line"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rela2"
+                    android:layout_below="@id/rela1"
+                    android:background="@drawable/custom_background3"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp10"
+                        android:id="@+id/login"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log In Access"
+                        />
+
+                    <ImageView
+                        android:layout_below="@+id/login"
+                        android:id="@+id/line1"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="#e0dbc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1" />
+
+                    <ImageView
+                        android:layout_below="@id/line1"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:id="@+id/notis"
+                        android:src="@drawable/ic_email"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30" />
+                    <TextView
+                        android:layout_marginTop="@dimen/dp14"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_below="@id/line1"
+                        android:layout_toRightOf="@id/notis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        />
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_marginTop="@dimen/dp14"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_below="@id/line1"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="asdasdas@gmail.com"
+                        />
+                    <ImageView
+                        android:layout_below="@id/notis"
+                        android:id="@+id/line2"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="#e0dbc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1" />
+
+                    <ImageView
+                        android:id="@+id/ivPass"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:layout_below="@id/line2"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:src="@drawable/ic_password"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30" />
+                    <TextView
+                        android:layout_below="@id/line2"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/notis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_below="@id/line2"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*********"
+                        />
+                    <ImageView
+                        android:layout_below="@id/ivPass"
+                        android:id="@+id/line4"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="#e0dbc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1" />
+                    <ImageView
+                        android:id="@+id/ivChangePass"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:layout_below="@id/line4"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:src="@drawable/ic_password"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30" />
+                    <TextView
+                        android:layout_below="@id/line4"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/ivChangePass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change password"
+                        />
+                    <ImageView
+                        android:id="@+id/ivChangePassword"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/line4"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rela3"
+                    android:layout_below="@id/rela2"
+                    android:background="@drawable/custom_background3"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dp20"
+                        android:id="@+id/google"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google Authentication Setting"
+                        />
+
+                    <ImageView
+                        android:layout_below="@+id/google"
+                        android:id="@+id/line3"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="#e0dbc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1" />
+
+                    <ImageView
+                        android:layout_below="@id/line3"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp30"
+                        android:id="@+id/icon_auth"
+                        android:src="@drawable/authen_ic"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30" />
+                    <TextView
+                        android:id="@+id/authenapp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:layout_below="@id/line3"
+                        android:layout_toRightOf="@id/icon_auth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Authenticator app"
+                        />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_below="@id/authenapp"
+                        android:layout_toRightOf="@id/icon_auth"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="@dimen/dp50"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp13"
+                        android:text="@string/use_the_authenticator_app_to_get_free_verfiticaion_code_even_when_your_phone_is_offline_available_for_android_and_iphone"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_enableGoogleAuth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_toRightOf="@id/icon_auth"
+                        android:text="@string/disable"
+                        android:textColor="#63affd"
+                        android:textSize="@dimen/sp13" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rela4"
+                    android:layout_below="@id/rela3"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/custom_background3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="@dimen/dp20"
+                        android:id="@+id/pincode"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pin code"/>
+                    <ImageView
+                        android:layout_below="@+id/pincode"
+                        android:id="@+id/line5"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="#e0dbc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1" />
+                    <ImageView
+                        android:id="@+id/lock"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:layout_below="@id/line5"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:src="@drawable/ic_password"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30" />
+                    <TextView
+                        android:layout_below="@id/line5"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Pin Code"
+                        />
+                    <Switch
+                        android:id="@+id/switchPincode"
+                        android:checked="false"
+                        android:layout_below="@id/line5"
+                        android:theme="@style/SCBSwitch"
+                        android:layout_marginTop="@dimen/dp18"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_below="@+id/lock"
+                        android:id="@+id/line6"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp20"
+                        android:background="#e0dbc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

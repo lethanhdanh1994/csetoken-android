@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:theme="@style/AppTheme"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp20"
+            android:id="@+id/rl_title"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_title"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp15"
+                android:text="Google Authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_title"
+                android:layout_alignParentLeft="true"
+                android:background="#a3a3a3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_title"
+                android:layout_alignParentRight="true"
+                android:background="#a3a3a3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+        <EditText
+            android:paddingLeft="@dimen/dp10"
+            android:textCursorDrawable="@drawable/custom_edittext_cursor"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp30"
+            android:id="@+id/et_code"
+            android:background="@drawable/custom_edittext_background"
+            android:textSize="@dimen/sp17"
+            android:layout_below="@id/rl_title"
+            android:hint="2FA Code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40" />
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp30"
+            android:textSize="@dimen/sp13"
+            android:textColor="#ffffff"
+            android:text="Submit"
+            android:background="@drawable/bg_custom_button_submit"
+            android:layout_below="@id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

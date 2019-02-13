@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/activity_main_card_stack_view"
+        android:layout_above="@+id/bottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        app:visibleCount="4"
+        app:layout_anchorGravity="center"
+        app:stackFrom="bottom"
+        app:elevationEnabled="true"
+        app:swipeEnabled="true"
+        app:swipeDirection="vertical" />
+
+    <Button
+        android:textSize="@dimen/sp15"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/button_request"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/activity_main_card_stack_view"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:text="Request Custom Amount"
+        />
+    <RelativeLayout
+        android:id="@+id/bottomLay"
+        android:background="#ebfaff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60">
+        <ImageView
+            android:id="@+id/icon_wallet"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/receive_bg_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:textSize="@dimen/sp13"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Wallet"
+            />
+        <TextView
+            android:id="@+id/tv_coinAsset"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC"
+            />
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_coinAsset"
+            android:textColor="#528dc7"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
